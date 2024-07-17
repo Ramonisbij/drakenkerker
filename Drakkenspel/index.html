@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avontuur in de Drakenkerker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="intro">
+            <h1>Avontuur in de Drakenkerker</h1>
+            <p>Welkom bij het drankspel "Avontuur in de Drakenkerker". Jullie gaan samen op avontuur door een legendarische kerker. Wees niet bang, je hebt jouw dobbelsteen om iedere uitdaging aan te gaan. Zorg dat je jouw betrouwbare groene rakkers meeneemt. Voeg spelers toe en begin het spel!</p>
+            <button id="start-game">Start het spel</button>
+        </div>
+        
+        <div id="add-players" style="display: none;">
+            <h2>Voeg spelers toe</h2>
+            <input type="text" id="player-name" placeholder="Naam van de speler">
+            <button id="add-player">Voeg speler toe</button>
+            <ul id="players-list"></ul>
+            <button id="start-adventure">Begin het avontuur</button>
+        </div>
+        
+        
+        <div id="scenario-container" style="display: none;">
+            <div id="scenario-content">
+                <div id="scenario-text-container">
+                    <p id="bevinden">Jullie bevinden je in...</p>
+                    <h2 id="scenario-text"></h2>
+                    <p id="scenario-task"></p>
+                    <p id="penalty-text"></p>
+                    <p id="current-player"></p>
+                    <div id="button-container">
+                    <button id="task-success">Gelukt</button>
+                    <button id="task-fail">Mislukt</button>
+                    <button id="next-scenario" style="display: none;">Ga verder</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       
+        <div id="players-status" style="display: none;">
+            <h2>Spelers</h2>
+            <div id="players"></div>
+        </div>
+        
+    </div>
+    <img id="scenario-image" src="" alt="Scenario Afbeelding">
+    <audio id="background-music" src="music\The Adventure Begins  D&DTTRPG Music  1 Hour.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
